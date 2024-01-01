@@ -38,6 +38,9 @@ android_app {
         "androidx.lifecycle_lifecycle-extensions",
         "com.google.android.material_material",
     ],
+    libs: [
+        "framework-lmodroid",
+    ],
     required: ["privapp_whitelist_com.libremobileos.parallelspace.xml"],
 }
 

@@ -10,7 +10,7 @@ import android.content.pm.ResolveInfo;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.android.internal.libremobileos.app.ParallelSpaceManager;
+import com.libremobileos.app.ParallelSpaceManager;
 
 import java.util.ArrayList;
 import java.util.List;

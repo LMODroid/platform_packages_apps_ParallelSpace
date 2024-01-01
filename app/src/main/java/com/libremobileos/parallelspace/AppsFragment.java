@@ -12,7 +12,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
-import com.android.internal.libremobileos.app.ParallelSpaceManager;
+import com.libremobileos.app.ParallelSpaceManager;
 
 import java.util.List;
 
