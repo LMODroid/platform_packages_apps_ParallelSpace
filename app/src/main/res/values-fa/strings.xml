@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">فضای موازی</string>
+    <string name="app_summary">با استفاده از فضای موازی، چند نمونه از یک برنامه را اجرا کنید.</string>
+    <string name="intro">اجرای چند نمونه از یک برنامه در فضاهای موازی جدا</string>
+    
+    <string name="category_spaces">فضاها</string>
+    <string name="no_space">فضایی وجود ندارد</string>
+    <string name="space">فضا</string>
+    <string name="please_wait">لطفا شکیبا باشید</string>
+    <string name="invalid_user_id">کاربر نامعتبر</string>
+    <string name="add_space">اضافه کردن فضای جدید</string>
+    <string name="remove_space">حذف کردن فضا</string>
+    <string name="cancel">لغو</string>
+
+    <string name="new_space_dialog_title">ایجاد فضای جدید</string>
+    <string name="new_space_dialog_message">نام فضای جدید را وارد کنید</string>
+    <string name="new_space_dialog_positive">ایجاد</string>
+    <string name="new_space_progress_message">در حال ایجاد فضا ...</string>
+
+    <string name="remove_space_dialog_title">حذف کردن فضا</string>
+    <string name="remove_space_dialog_message">آیا مطمئن هستید که می‌خواهید فضای مورد نظر را حذف کنید؟</string>
+    <string name="remove_space_dialog_positive">حذف</string>
+    <string name="remove_space_progress_message">در حال حذف فضا ...</string>
+
+    <string name="space_name_empty">نام فضا نمی‌تواند خالی باشد</string>
+    <string name="space_limit_reached">شما به حداکثر تعداد فضاها رسیده‌اید</string>
+
+    <string name="default_cloned_summary">این برنامه همیشه موازی‌سازی می‌شود</string>
+</resources>
