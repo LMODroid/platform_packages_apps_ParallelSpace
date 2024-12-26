@@ -39,7 +39,7 @@ android_app {
         "com.google.android.material_material",
     ],
     libs: [
-        "framework-lmodroid",
+        "framework-lmodroid.impl",
     ],
     required: ["privapp_whitelist_com.libremobileos.parallelspace.xml"],
 }
