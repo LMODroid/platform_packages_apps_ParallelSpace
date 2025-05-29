@@ -26,7 +26,10 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity {
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(com.android.settingslib.R.id.content_frame, new SettingsFragment())
+                    .replace(
+                        com.android.settingslib.collapsingtoolbar.R.id.content_frame,
+                        new SettingsFragment()
+                    )
                     .commit();
         }
     }

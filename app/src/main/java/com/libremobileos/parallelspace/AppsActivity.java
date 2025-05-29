@@ -38,7 +38,10 @@ public class AppsActivity extends CollapsingToolbarBaseActivity {
             AppsFragment appsFragment = AppsFragment.newInstance(mUserId);
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(com.android.settingslib.R.id.content_frame, appsFragment)
+                    .replace(
+                        com.android.settingslib.collapsingtoolbar.R.id.content_frame,
+                        appsFragment
+                    )
                     .commit();
         }
     }
