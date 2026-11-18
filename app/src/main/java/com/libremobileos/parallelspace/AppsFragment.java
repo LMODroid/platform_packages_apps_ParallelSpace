@@ -57,11 +57,13 @@ public class AppsFragment extends PreferenceFragmentCompat {
             }
             SwitchPreferenceCompat pref = new SwitchPreferenceCompat(requireActivity());
             pref.setTitle(info.getLabel());
-            pref.setSummary(info.getPackageName());
+            pref.setSummary(info.isAppHidden() ? getString(R.string.app_hidden_summary)
+                    : info.getPackageName());
             pref.setIcon(info.getIcon());
             pref.setChecked(info.isAppDuplicated());
             pref.setOnPreferenceChangeListener((preference, newValue) -> {
                 info.setDuplicateApp((Boolean) newValue);
+                preference.setSummary(info.getPackageName());
                 return true;
             });
             mPreferenceScreen.addPreference(pref);

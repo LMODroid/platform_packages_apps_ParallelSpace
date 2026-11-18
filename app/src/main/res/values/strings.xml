@@ -26,4 +26,5 @@
     <string name="space_limit_reached">You have reached the maximum number of spaces</string>
 
     <string name="default_cloned_summary">This app is always cloned</string>
+    <string name="app_hidden_summary">App is hidden. Turn on to unhide it.</string>
 </resources>
