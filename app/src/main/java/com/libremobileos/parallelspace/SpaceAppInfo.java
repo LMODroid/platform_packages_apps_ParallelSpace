@@ -14,14 +14,17 @@ public class SpaceAppInfo {
     private final ParallelSpaceManager mParallelSpaceManager;
     private final int mUserId;
     private boolean mAppDuplicated;
+    private boolean mAppHidden;
 
-    SpaceAppInfo(ResolveInfo info, PackageManager pm, ParallelSpaceManager psm, int userId, boolean isDuplicated) {
+    SpaceAppInfo(ResolveInfo info, PackageManager pm, ParallelSpaceManager psm, int userId,
+            boolean isDuplicated, boolean isHidden) {
         mLabel = info.loadLabel(pm).toString();
         mIcon = info.loadIcon(pm);
         mPackageName = info.activityInfo.packageName;
         mParallelSpaceManager = psm;
         mUserId = userId;
         mAppDuplicated = isDuplicated;
+        mAppHidden = isHidden;
     }
 
     String getLabel() {
@@ -36,6 +39,11 @@ public class SpaceAppInfo {
         return mAppDuplicated;
     }
 
+    /** Whether the clone exists but was hidden, e.g. from its app info page. */
+    boolean isAppHidden() {
+        return mAppHidden;
+    }
+
     void setDuplicateApp(boolean duplicate) {
         if (duplicate)
             mParallelSpaceManager.duplicatePackage(mPackageName, mUserId);
@@ -43,6 +51,8 @@ public class SpaceAppInfo {
             mParallelSpaceManager.removePackage(mPackageName, mUserId);
 
         mAppDuplicated = duplicate;
+        // Duplicating unhides an existing clone, removing deletes it.
+        mAppHidden = false;
     }
 
     Drawable getIcon() {
